@@ -1,0 +1,323 @@
+.register-page {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  max-width: 1180px;
+  margin: 35px auto;
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(28, 72, 91, 0.12);
+  font-family: Arial, sans-serif;
+  color: #193447;
+}
+
+.register-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 55px 42px;
+  color: white;
+  background: linear-gradient(145deg, #087e8b, #07516d);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hospital-logo {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.17);
+  font-size: 35px;
+  margin-bottom: 32px;
+}
+
+.welcome-text {
+  color: #a9f0e7;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.register-banner h1 {
+  font-size: clamp(30px, 3vw, 43px);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.banner-description {
+  max-width: 360px;
+  color: #d8edf1;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.banner-benefits {
+  display: grid;
+  gap: 16px;
+}
+
+.banner-benefits p {
+  color: #eefafa;
+  font-size: 14px;
+}
+
+.register-form-section {
+  padding: 48px;
+}
+
+.form-heading {
+  margin-bottom: 28px;
+}
+
+.form-tag {
+  display: inline-block;
+  padding: 7px 12px;
+  color: #087e8b;
+  background: #e7f7f7;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.form-heading h2 {
+  font-size: clamp(25px, 2.5vw, 32px);
+  margin: 0 0 10px;
+  color: #18394c;
+}
+
+.form-heading p {
+  font-size: 14px;
+  color: #7b8c98;
+  line-height: 1.7;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 21px 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #294558;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid #dce6ec;
+  border-radius: 9px;
+  background: #fbfdfe;
+  padding: 13px 14px;
+  font-family: inherit;
+  font-size: 13px;
+  color: #193447;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input,
+.form-group select {
+  min-height: 46px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a2b0ba;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0b9a9d;
+  box-shadow: 0 0 0 3px rgba(11, 154, 157, 0.1);
+  background: #fff;
+}
+
+.terms-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.terms-row input {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: #078c94;
+  flex-shrink: 0;
+}
+
+.terms-row label {
+  color: #637986;
+  font-size: 12px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(100deg, #087e8b, #079da0);
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(8, 126, 139, 0.18);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn span {
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(8, 126, 139, 0.25);
+}
+
+.submit-btn:hover span {
+  transform: translateX(4px);
+}
+
+.login-prompt {
+  text-align: center;
+  margin-top: 22px;
+  color: #778995;
+  font-size: 13px;
+}
+
+.login-prompt a {
+  color: #07868e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-prompt a:hover {
+  text-decoration: underline;
+}
+
+.privacy-note {
+  text-align: center;
+  color: #84949d;
+  font-size: 11px;
+  line-height: 1.7;
+  margin-top: 24px;
+}
+
+@media (max-width: 950px) {
+  .register-page {
+    grid-template-columns: 0.75fr 1.25fr;
+    margin: 20px auto;
+  }
+
+  .register-banner {
+    padding: 35px 25px;
+  }
+
+  .register-form-section {
+    padding: 35px 25px;
+  }
+
+  .form-grid {
+    gap: 18px 13px;
+  }
+}
+
+@media (max-width: 680px) {
+  .register-page {
+    grid-template-columns: 1fr;
+    margin: 12px auto;
+    border-radius: 16px;
+  }
+
+  .register-banner {
+    padding: 30px 25px;
+  }
+
+  .hospital-logo {
+    width: 48px;
+    height: 48px;
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
+
+  .register-banner h1 {
+    font-size: 30px;
+  }
+
+  .banner-description {
+    margin-bottom: 22px;
+    font-size: 14px;
+  }
+
+  .banner-benefits {
+    gap: 12px;
+  }
+
+  .register-form-section {
+    padding: 30px 22px;
+  }
+
+  .form-heading h2 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 380px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .register-form-section {
+    padding: 25px 16px;
+  }
+
+  .register-banner {
+    padding: 25px 20px;
+  }
+
+  .register-banner h1 {
+    font-size: 27px;
+  }
+}

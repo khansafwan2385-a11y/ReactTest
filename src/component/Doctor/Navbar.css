@@ -1,0 +1,63 @@
+
+
+.doctor-navbar {
+  width: 100%;
+  min-height: 70px;
+  background-color: #111111;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+  /* Fixed navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+}
+
+.doctor-hospital-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.doctor-logo {
+  color: #38bdf8;
+  font-size: 30px;
+}
+
+.doctor-panel-title {
+  font-size: 16px;
+  color: #d1d5db;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .doctor-navbar {
+    min-height: 60px;
+    padding: 0 15px;
+  }
+
+  .doctor-hospital-name {
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .doctor-logo {
+    font-size: 24px;
+  }
+
+  .doctor-panel-title {
+    font-size: 13px;
+  }
+}

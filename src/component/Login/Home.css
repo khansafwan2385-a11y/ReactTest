@@ -1,0 +1,221 @@
+
+.hospital-home {
+  font-family: Arial, sans-serif;
+  color: #173047;
+  width: 100%;
+}
+
+.hospital-home * {
+  box-sizing: border-box;
+}
+
+.hero-section {
+  min-height: 520px;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(4, 35, 55, 0.88),
+      rgba(4, 35, 55, 0.32)
+    ),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+}
+
+.hero-content {
+  max-width: 650px;
+  color: white;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 10px 16px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.hero-content h1 {
+  font-size: 54px;
+  line-height: 1.15;
+  margin: 0 0 20px;
+}
+
+.hero-content p {
+  max-width: 520px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-buttons button {
+  padding: 14px 22px;
+  border: 1px solid #08a6a6;
+  border-radius: 6px;
+  background: #08a6a6;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
+  background: #078585;
+}
+
+.hero-buttons .secondary-btn {
+  background: transparent;
+  border-color: white;
+}
+
+.hero-buttons .secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.services-section {
+  padding: 60px 8%;
+  text-align: center;
+  background: #f1f8fa;
+  scroll-margin-top: 20px;
+}
+
+.services-section h2,
+.about-section h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+}
+
+.services-section > p,
+.about-section > p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #526777;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.service-card {
+  padding: 30px 22px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(20, 50, 70, 0.08);
+}
+
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #e0f7f5;
+  color: #078b8b;
+  font-size: 28px;
+}
+
+.service-card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.service-card p {
+  color: #617381;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.about-section {
+  padding: 60px 8%;
+  text-align: center;
+  scroll-margin-top: 20px;
+}
+
+.about-section > p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hospital-footer {
+  padding: 30px 20px;
+  background: #123047;
+  color: white;
+  text-align: center;
+}
+
+.hospital-footer h3 {
+  margin: 0 0 10px;
+}
+
+.hospital-footer p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #d4e2e9;
+}
+
+@media (max-width: 768px) {
+  .hero-section,
+  .hero-overlay {
+    min-height: 460px;
+  }
+
+  .hero-overlay {
+    padding: 45px 6%;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section,
+  .about-section {
+    padding: 45px 6%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 35px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .services-section h2,
+  .about-section h2 {
+    font-size: 27px;
+  }
+}

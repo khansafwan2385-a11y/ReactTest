@@ -1,0 +1,394 @@
+/* Main Page */
+
+.reception-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 25px;
+  box-sizing: border-box;
+  background: #f4f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+}
+
+/* Header */
+
+.reception-header {
+  margin-bottom: 25px;
+}
+
+.reception-header h2 {
+  margin: 0 0 8px;
+  color: #17365d;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.reception-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+/* Top Layout */
+
+.reception-top-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(250px, 0.85fr);
+  gap: 22px;
+  align-items: stretch;
+  margin-bottom: 25px;
+}
+
+/* Cards */
+
+.reception-form-card,
+.reception-stats-card,
+.reception-table-card {
+  min-width: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+/* Form Card */
+
+.reception-form-card {
+  padding: 24px;
+}
+
+.reception-card-header {
+  margin-bottom: 25px;
+}
+
+.reception-card-header h3 {
+  margin: 0 0 8px;
+  color: #17365d;
+  font-size: 19px;
+}
+
+.reception-card-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Form Fields */
+
+.reception-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 20px;
+}
+
+.reception-field label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reception-field input,
+.reception-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  border: 1px solid #dbe3ed;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.reception-field input {
+  height: 45px;
+}
+
+.reception-field textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+.reception-field input:focus,
+.reception-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.reception-field input::placeholder,
+.reception-field textarea::placeholder {
+  color: #a0aaba;
+}
+
+/* Buttons */
+
+.reception-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.reception-btn {
+  flex: 1;
+  min-width: 75px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.reception-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.reception-add-btn {
+  background: #269567;
+}
+
+.reception-update-btn {
+  background: #3278e5;
+}
+
+.reception-delete-btn {
+  background: #df5353;
+}
+
+/* Total Receptionists Card */
+
+.reception-stats-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  border-top: 4px solid #3278e5;
+}
+
+.reception-stats-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.reception-stats-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #eaf2ff;
+  font-size: 32px;
+}
+
+.reception-stats-badge {
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: #edf4ff;
+  color: #3278e5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.reception-stats-info p {
+  margin: 0 0 10px;
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.reception-stats-info h2 {
+  margin: 0 0 10px;
+  color: #17365d;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.reception-stats-info span {
+  display: block;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Table Card */
+
+.reception-table-card {
+  padding: 24px;
+}
+
+.reception-table-header {
+  margin-bottom: 22px;
+}
+
+.reception-table-header h3 {
+  margin: 0 0 8px;
+  color: #17365d;
+  font-size: 19px;
+}
+
+.reception-table-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Table */
+
+.reception-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.reception-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.reception-table thead {
+  background: #edf3fa;
+}
+
+.reception-table th {
+  padding: 15px;
+  color: #405675;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.reception-table td {
+  padding: 15px;
+  border-bottom: 1px solid #edf0f5;
+  color: #475569;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.reception-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .reception-page {
+    padding: 20px;
+  }
+
+  .reception-top-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    gap: 16px;
+  }
+
+  .reception-form-card,
+  .reception-stats-card,
+  .reception-table-card {
+    padding: 18px;
+  }
+
+  .reception-buttons {
+    gap: 8px;
+  }
+
+  .reception-btn {
+    padding: 11px 9px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .reception-page {
+    padding: 15px;
+  }
+
+  .reception-header h2 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .reception-top-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .reception-form-card,
+  .reception-stats-card,
+  .reception-table-card {
+    padding: 18px;
+  }
+
+  .reception-card-header h3,
+  .reception-table-header h3 {
+    font-size: 18px;
+  }
+
+  .reception-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .reception-btn {
+    min-width: 0;
+    padding: 12px 6px;
+    font-size: 12px;
+  }
+
+  .reception-stats-card {
+    min-height: 210px;
+  }
+
+  .reception-stats-top {
+    margin-bottom: 20px;
+  }
+
+  .reception-stats-info h2 {
+    font-size: 36px;
+  }
+
+  .reception-table-card {
+    padding: 16px;
+  }
+
+  .reception-table th,
+  .reception-table td {
+    padding: 12px 10px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 360px) {
+  .reception-page {
+    padding: 10px;
+  }
+
+  .reception-form-card,
+  .reception-stats-card,
+  .reception-table-card {
+    padding: 14px;
+  }
+
+  .reception-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .reception-btn {
+    width: 100%;
+  }
+}

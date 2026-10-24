@@ -1,0 +1,410 @@
+
+/* Main Page */
+
+.department-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 25px;
+  box-sizing: border-box;
+  background: #f4f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+}
+
+/* Page Header */
+
+.department-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.department-header h2 {
+  margin: 0 0 8px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #17365d;
+}
+
+.department-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #718096;
+}
+
+/* Top Layout */
+
+.department-top-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(250px, 0.85fr);
+  gap: 22px;
+  align-items: stretch;
+  margin-bottom: 25px;
+}
+
+/* Common Cards */
+
+.department-form-card,
+.department-stats-card,
+.department-table-card {
+  min-width: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+/* Form Card */
+
+.department-form-card {
+  padding: 24px;
+}
+
+.department-card-header {
+  margin-bottom: 25px;
+}
+
+.department-card-header h3 {
+  margin: 0 0 8px;
+  color: #17365d;
+  font-size: 19px;
+}
+
+.department-card-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Form Fields */
+
+.department-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 20px;
+}
+
+.department-field label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.department-field input,
+.department-field textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  border: 1px solid #dbe3ed;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.department-field input {
+  height: 45px;
+}
+
+.department-field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.department-field input:focus,
+.department-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.department-field input::placeholder,
+.department-field textarea::placeholder {
+  color: #a0aaba;
+}
+
+/* Buttons */
+
+.department-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.department-btn {
+  flex: 1;
+  min-width: 75px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.department-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.add-btn {
+  background: #269567;
+}
+
+.update-btn {
+  background: #3278e5;
+}
+
+.delete-btn {
+  background: #df5353;
+}
+
+/* Total Departments Card */
+
+.department-stats-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  border-top: 4px solid #3278e5;
+}
+
+.department-stats-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.department-stats-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #eaf2ff;
+  font-size: 32px;
+}
+
+.department-stats-badge {
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: #edf4ff;
+  color: #3278e5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.department-stats-info p {
+  margin: 0 0 10px;
+  color: #64748b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.department-stats-info h2 {
+  margin: 0 0 10px;
+  color: #17365d;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.department-stats-info span {
+  display: block;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Table Card */
+
+.department-table-card {
+  padding: 24px;
+}
+
+.department-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.department-table-header h3 {
+  margin: 0 0 8px;
+  color: #17365d;
+  font-size: 19px;
+}
+
+.department-table-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Table */
+
+.department-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.department-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.department-table thead {
+  background: #edf3fa;
+}
+
+.department-table th {
+  padding: 15px;
+  color: #405675;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.department-table td {
+  padding: 15px;
+  border-bottom: 1px solid #edf0f5;
+  color: #475569;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.department-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .department-page {
+    padding: 20px;
+  }
+
+  .department-top-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    gap: 16px;
+  }
+
+  .department-form-card,
+  .department-stats-card,
+  .department-table-card {
+    padding: 18px;
+  }
+
+  .department-buttons {
+    gap: 8px;
+  }
+
+  .department-btn {
+    padding: 11px 9px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .department-page {
+    padding: 15px;
+  }
+
+  .department-header {
+    margin-bottom: 20px;
+  }
+
+  .department-header h2 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .department-top-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .department-form-card,
+  .department-stats-card,
+  .department-table-card {
+    padding: 18px;
+  }
+
+  .department-card-header h3,
+  .department-table-header h3 {
+    font-size: 18px;
+  }
+
+  .department-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .department-btn {
+    min-width: 0;
+    padding: 12px 6px;
+    font-size: 12px;
+  }
+
+  .department-stats-card {
+    min-height: 210px;
+  }
+
+  .department-stats-top {
+    margin-bottom: 20px;
+  }
+
+  .department-stats-info h2 {
+    font-size: 36px;
+  }
+
+  .department-table-card {
+    padding: 16px;
+  }
+
+  .department-table th,
+  .department-table td {
+    padding: 12px 10px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 360px) {
+  .department-page {
+    padding: 10px;
+  }
+
+  .department-form-card,
+  .department-stats-card,
+  .department-table-card {
+    padding: 14px;
+  }
+
+  .department-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .department-btn {
+    width: 100%;
+  }
+
+  .department-stats-badge {
+    font-size: 10px;
+  }
+}

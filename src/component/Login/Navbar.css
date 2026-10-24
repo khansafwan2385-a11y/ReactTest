@@ -1,0 +1,282 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 76px;
+}
+
+/* Navbar */
+
+.hc-navbar {
+  width: 100%;
+  min-height: 76px;
+  padding: 12px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+
+  /* Fixed Navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo and brand */
+
+.hc-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.hc-logo {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #087f8c;
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.hc-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hc-brand-text strong {
+  color: #123047;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.hc-brand-text small {
+  color: #64748b;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+/* Menu layout */
+
+.hc-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  flex: 1;
+}
+
+.hc-nav-links,
+.hc-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Navigation links */
+
+.hc-nav-links a {
+  color: #334155;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.hc-nav-links a:hover,
+.hc-nav-links a.active {
+  color: #087f8c;
+}
+
+/* Login and register links */
+
+.hc-nav-actions {
+  gap: 14px;
+}
+
+.hc-login-link,
+.hc-register-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.hc-login-link {
+  color: #087f8c;
+  background: #ffffff;
+  border: 1px solid #087f8c;
+}
+
+.hc-login-link:hover,
+.hc-login-link.active {
+  color: #ffffff;
+  background: #087f8c;
+}
+
+.hc-register-link {
+  color: #ffffff;
+  background: #087f8c;
+  border: 1px solid #087f8c;
+}
+
+.hc-register-link:hover,
+.hc-register-link.active {
+  background: #066570;
+  border-color: #066570;
+}
+
+/* Hamburger button */
+
+.hc-menu-toggle {
+  display: none;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: #123047;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .hc-navbar {
+    padding: 12px 4%;
+    gap: 16px;
+  }
+
+  .hc-menu {
+    gap: 18px;
+  }
+
+  .hc-nav-links,
+  .hc-nav-actions {
+    gap: 14px;
+  }
+
+  .hc-brand-text strong {
+    font-size: 19px;
+  }
+}
+
+/* Mobile responsive menu */
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .hc-navbar {
+    min-height: 70px;
+    padding: 12px 5%;
+    flex-wrap: wrap;
+  }
+
+  .hc-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .hc-brand-text strong {
+    font-size: 18px;
+  }
+
+  .hc-brand-text small {
+    font-size: 8px;
+    letter-spacing: 0.6px;
+  }
+
+  .hc-menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .hc-menu {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 15px 0 5px;
+  }
+
+  .hc-menu.hc-menu-open {
+    display: flex;
+  }
+
+  .hc-nav-links,
+  .hc-nav-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .hc-nav-links a {
+    display: block;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .hc-login-link,
+  .hc-register-link {
+    width: 100%;
+    padding: 13px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 380px) {
+  .hc-navbar {
+    padding: 10px 3%;
+  }
+
+  .hc-brand {
+    gap: 7px;
+  }
+
+  .hc-logo {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+
+  .hc-brand-text strong {
+    font-size: 16px;
+  }
+
+  .hc-brand-text small {
+    font-size: 7px;
+    letter-spacing: 0.3px;
+  }
+
+  .hc-menu-toggle {
+    font-size: 25px;
+  }
+}
